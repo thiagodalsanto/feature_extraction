@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import cv2
 from skimage import data
 
-
 def main():
     pass
 
