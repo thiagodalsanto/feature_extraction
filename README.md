@@ -10,6 +10,8 @@ Na segunda etapa do projeto (Análise de Textura), a ênfase foi na extração d
 
 As cinco características extraídas de cada GLCM foram: Dissimilaridade, Homogeneidade, Contraste, Energia e ASM. Essas características texturais fornecem insights valiosos sobre a variação da textura das letras.
 
+Para o GLCM, foi utilizado o código de fast_glcm criado por [Taka Tzm](https://github.com/tzm030329/GLCM/).
+
 ## Sobre o trabalho:
 
 * Disciplina: OP63I-CC8 - Processamento De Imagens E Reconhecimento De Padrões	
