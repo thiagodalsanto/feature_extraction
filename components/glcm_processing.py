@@ -12,7 +12,7 @@ def glcm_processing(letra):
     if not os.path.exists(result_folder):
         os.makedirs(result_folder)
 
-    for i in range(1, 101):
+    for i in range(1, 26):
         archive_name = f"{letra}{i:05d}.pgm"
         image_path = os.path.join(image_folder, archive_name)
 
