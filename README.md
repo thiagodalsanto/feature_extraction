@@ -38,13 +38,13 @@ Para o GLCM, foi utilizado o código de fast_glcm criado por [Taka Tzm](https://
 
 ## Imagens da Aplicação
 
-Imagem 1 - Na esquerda o esqueleto gerado para a letra, a direita o contorno dela. Abaixo da imagem os dados estatísticos da imagem original. Ao todo foram gerados para 25 formatos de letra diferente para cada letra do alfabeto.
+Imagem 1 - Na esquerda o esqueleto gerado para a letra, a direita o contorno dela. Abaixo da imagem os dados estatísticos da imagem original. Ao todo foram gerados para 25 formatos diferentes para cada letra do alfabeto.
 <p align="center">
     <img src="RESULTADO_ESTRUTURAIS_ESTATISTICAS/A00001_skeleton_contours.png">
     <img src="RESULTADO_ESTRUTURAIS_ESTATISTICAS/Y00001_skeleton_contours.png">
 </p>
 
-Imagem 2 - Métricas do GLCM gerados para cada letra do alfabeto. Ao todo foram gerados para 10 formatos de letra diferente para cada letra do alfabeto. Foram gerados para dissimilaridade, homogeneidade, contraste, energia e ASM.
+Imagem 2 - Métricas do GLCM gerados para cada letra do alfabeto. Ao todo foram gerados para 10 formatos diferente para cada letra do alfabeto. Foram gerados para dissimilaridade, homogeneidade, contraste, energia e ASM.
 <p align="center">
     <img src="RESULTADO_GLCM/Z00002_metricas_glcm.png">
 </p>
