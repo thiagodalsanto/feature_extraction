@@ -12,7 +12,7 @@ Para o GLCM, foi utilizado o código de fast_glcm criado por [Taka Tzm](https://
 
 * Disciplina: OP63I-CC8 - Processamento De Imagens E Reconhecimento De Padrões	
 * Turma: 2023/2 - 8º Período
-* Docente: Pedro Luiz de Paula Filho
+* Docente: Prof. Dr. Pedro Luiz de Paula Filho
 
 ## Recursos 
 - **Extração de Características Estruturais:** Foram extraidos duas características estruturais: esqueleto e contorno.
