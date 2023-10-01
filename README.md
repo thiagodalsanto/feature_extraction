@@ -32,7 +32,7 @@ Para o GLCM, foi utilizado o código de fast_glcm criado por [Taka Tzm](https://
 ## Como Utilizar
 1. Clone o repositório do GitHub: `git clone https://github.com/thiagodalsanto/feature_extraction.git`
 2. Instale as [dependências](#dependências) utilizadas
-3. Execute o aplicativo em uma IDE com o comando:
+3. Execute o aplicativo em uma IDE, dentro da raiz do projeto, com o comando:
    1. Linux: `python3 main.py`
    2. Windows: `python main.py`
 
