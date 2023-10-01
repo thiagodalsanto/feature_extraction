@@ -20,27 +20,21 @@ Para o GLCM, foi utilizado o código de fast_glcm criado por [Taka Tzm](https://
 - **Análise de Texturas:** Foi convertido utilizando o GLCM, cinco matrizes de coocorrência de níveis de cinza: homogeneidade, contraste, energia e ASM.
 
 ## Dependências
-Siga essa ordem de instalação para ambos os sistemas operacionais, para garantir que não exista conflito de versões:
+**Dependêndicas utilizadas:** Python 3, NumPy, OpenCV (cv2), Matplotlib e SkImage.
 
-### Para o Linux:
-1. Python 3 `pip install python3`
-2. NumPy `pip install numpy`
-3. OpenCV (cv2) `pip install opencv-python`
-4. Matplotlib `pip install matplotlib`
-5. Skimage `pip install skimage`
+### Para o Linux:  
+`pip install python3 numpy opencv-python matplotlib skimage` 
 
 ### Para o Windows:
 1. Python 3.11.5 ([Instalador 64-bit](https://www.python.org/downloads/windows/))
-2. NumPy `pip install numpy`
-3. OpenCV (cv2) `pip install opencv-python`
-4. Matplotlib `pip install matplotlib`
-5. Skimage `pip install skimage`
+2. `pip install numpy opencv-python matplotlib skimage` 
 
 ## Como Utilizar
 1. Clone o repositório do GitHub: `git clone https://github.com/thiagodalsanto/feature_extraction.git`
 2. Instale as [dependências](#dependências) utilizadas
-3. Execute a etapa 4 para o arquivo `main.py` dentro da raiz do projeto
-4. Execute o aplicativo em uma IDE com o comando => para Linux: `python3 main.py` e para Windows: `python main.py`
+3. Execute o aplicativo em uma IDE com o comando:
+   1. Linux: `python3 main.py`
+   2. Windows: `python main.py`
 
 ## Imagens da Aplicação
 
