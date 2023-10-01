@@ -17,9 +17,9 @@ def glcm_processing(letra):
         image_path = os.path.join(image_folder, archive_name)
 
         if os.path.exists(image_path):
-            imagem = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+            image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
-            resized_image = cv2.resize(imagem, (200, 200))
+            resized_image = cv2.resize(image, (200, 200))
 
             dissimilarity = fast_glcm_dissimilarity(resized_image)
             homogeneity = fast_glcm_homogeneity(resized_image)
