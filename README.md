@@ -4,7 +4,7 @@ Projeto para análise de letras do alfabeto por meio da combinação de Python e
 
 Na primeira etapa (extração de características), foram implementadas técnicas de processamento de imagem com OpenCV para analisar 25 imagens diferentes para cada letra do alfabeto. Foram geradas duas características estruturais: o esqueleto das letras e o contorno delas. Além das características estruturais, foram calculadas quatro características estatísticas para cada letra: média, desvio padrão, curtose e entropia. Essas medidas fornecem informações detalhadas sobre as propriedades das letras.
 
-Na segunda etapa do projeto (extração de textura), a ênfase foi na extração de informações texturais das letras. Foram aplicados filtros em 10 imagens diferentes para cada letra do alfabeto, e foram geradas cinco matrizes de co-ocorrência de níveis de cinza (GLCMs) para cada imagem. As GLCMs representam a relação entre os valores de intensidade dos pixels em uma imagem, capturando texturas e padrões. Às cinco características extraídas de cada GLCM foram: dissimilaridade, homogeneidade, contraste, energia e ASM. Além disso, para as mesmas matrizes de co-ocorrência, foram obtidos os valores de texturas identificados.
+Na segunda etapa do projeto (extração de textura), a ênfase foi na extração de informações texturais das letras. Foram aplicados filtros em 10 imagens diferentes para cada letra do alfabeto, e foram geradas cinco matrizes de co-ocorrência de níveis de cinza (GLCMs) para cada imagem. As GLCMs representam a relação entre os valores de intensidade dos pixels em uma imagem, capturando texturas e padrões. Às cinco características extraídas de cada GLCM foram: dissimilaridade, homogeneidade, contraste, energia e ASM. Além disso, para as mesmas matrizes de co-ocorrência, foram obtidos os valores de texturas identificados e classes.
 
 Para os filtros do GLCM, foi utilizado o código de fast_glcm criado por [Taka Tzm](https://github.com/tzm030329/GLCM/), enquanto para a geração dos valores das matrizes de co-ocorrência para cada um dos valores escolhidos, foi utilizado o scikit-image.
 
@@ -45,13 +45,13 @@ Imagem 1 - Na esquerda o esqueleto gerado para a letra, a direita o contorno del
     <img src="RESULTADO_ESTRUTURAIS_ESTATISTICAS/Y00001_skeleton_contours.png">
 </p>
 
-Imagem 2 - Aplicação de filtros do fast_GLCM gerados para cada letra do alfabeto. Ao todo foram gerados para 10 formatos diferentes para cada letra do alfabeto. Foram gerados para dissimilaridade, homogeneidade, contraste, energia e ASM.
+Imagem 2 - Valores das matrizes de co-ocorrência obtidos com o Scikit-Image para 10 imagens diferentes de cada letra do alfabeto. Foram obtidos valores para as matrizes de dissimilaridade, homogeneidade, contraste, energia e ASM. O resultado foi dado no mesmo arquivo (glcm_metrics.txt), onde aparecem os valores separados por espaço, na seguinte ordem: valor_dissimilaridade valor_homogeneidade valor_contraste valor_ASM valor_energia classe_pertencente.
 <p align="center">
-    <img src="RESULTADO_GLCM/Z00002_metricas_glcm.png">
+    <img src="https://github.com/thiagodalsanto/feature_extraction/assets/55465433/c79c80b7-7930-4c0a-a3ad-2e074746a0d9">
 </p>
 
-Imagem 3 - Valores das matrizes de co-ocorrência obtidos com o Scikit-Image para 10 imagens diferentes de cada letra do alfabeto. Foram obtidos valores para as matrizes de dissimilaridade, homogeneidade, contraste, energia e ASM. Exemplo de como saiu o resultado de um dos arquivos textuais para uma das letras geradas. O título do arquivo sai com a identificação da letra (Ex.: Z00008_glcm_values.txt).
-<p align="left">
-    <img src="https://github.com/thiagodalsanto/feature_extraction/assets/55465433/192c36e5-31d3-4e9d-94fd-95ecb33feec8">
+Imagem 3 - Aplicação de filtros do fast_GLCM gerados para cada letra do alfabeto. Ao todo foram gerados para 10 formatos diferentes para cada letra do alfabeto. Foram gerados para dissimilaridade, homogeneidade, contraste, energia e ASM.
+<p align="center">
+    <img src="https://github.com/thiagodalsanto/feature_extraction/assets/55465433/80eada53-bbff-4576-84fd-6058989e4d9c" width="800">
 </p>
 
