@@ -29,18 +29,3 @@ def glcm_values(image, prefix):
         f.write(f"Contrast: {contrast}\n")
         f.write(f"ASM: {asm}\n")
         f.write(f"Energy: {energy}\n")
-
-    # fig, axes = plt.subplots(1, 2, figsize=(12, 4))
-    # fig.suptitle(f"Métricas GLCM para {prefix}", fontsize=16)
-
-    # axes[0].imshow(image, cmap="gray")
-    # axes[0].set_title("Imagem Original")
-
-    # axes[1].imshow(glcm[:, :, 0, 0], cmap="gray", extent=(0, 1, 0, 1))
-    # axes[1].set_title("Matriz GLCM")
-
-    # for ax in axes:
-    #     ax.axis("off")
-
-    # plt.savefig(os.path.join(glcm_values_folder, f"{prefix}_glcm_metrics.png"), dpi=300)
-    # plt.close(fig)
