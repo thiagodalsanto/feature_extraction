@@ -12,7 +12,7 @@ def structural_statistical_text(letras):
     results = []  
 
     for letra in letras:
-        for i in range(1, 11):
+        for i in range(1, 101):
             archive_name = f"{letra}{i:05d}.pgm"
             image_path = os.path.join(image_folder, archive_name)
 
@@ -39,7 +39,3 @@ def structural_statistical_text(letras):
                 entropy = -np.sum(np.multiply(hist, np.log2(hist + np.finfo(float).eps)))
 
                 results.append([skeleton_mean, contours_area, mean, std_deviation, curtose, entropy])
-
-    with open("results_statistical_structural.txt", "w") as output_file:
-        for result in results:
-            output_file.write(" ".join([f"{val:.2f}" for val in result]) + "\n")

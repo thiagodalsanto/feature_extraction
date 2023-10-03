@@ -6,8 +6,8 @@ from components.structural_statistical_text import structural_statistical_text
 
 letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-# process_images_for_glcm(letters)
-structural_statistical_text(letters)
+process_images_for_glcm(letters)
+# structural_statistical_text(letters)
 
 for letter in letters:
     # structural_and_statistical_processing(letter)

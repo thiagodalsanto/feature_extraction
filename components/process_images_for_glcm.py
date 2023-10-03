@@ -9,7 +9,7 @@ def process_images_for_glcm(letters):
     structural_statistical_text(letters)
 
     with open("results_statistical_structural.txt", "r") as result_file:
-        structural_results = [tuple(map(float, line.strip().split())) for line in result_file]
+        structural_results = [line.strip().split() for line in result_file]
 
     for letter in letters:
         for i in range(1, 101):
@@ -20,7 +20,9 @@ def process_images_for_glcm(letters):
                 resized_image = cv2.resize(image, (200, 200))
                 values = glcm_values(resized_image)
 
-                combined_values = values + structural_results.pop(0)
+                values_list = [float(val) for val in values]
+
+                combined_values = values_list + structural_results.pop(0) + [letter]
                 glcm_values_list.append(combined_values)
 
             else:
