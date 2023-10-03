@@ -45,9 +45,11 @@ Imagem 1 - Na esquerda o esqueleto gerado para a letra, a direita o contorno del
     <img src="RESULTADO_ESTRUTURAIS_ESTATISTICAS/Y00001_skeleton_contours.png">
 </p>
 
-Imagem 2 - Valores das matrizes de co-ocorrência obtidos com o Scikit-Image para 10 imagens diferentes de cada letra do alfabeto. Foram obtidos valores para as matrizes de dissimilaridade, homogeneidade, contraste, energia e ASM. O resultado foi dado no mesmo arquivo (glcm_metrics.txt), onde aparecem os valores separados por espaço, na seguinte ordem: valor_dissimilaridade valor_homogeneidade valor_contraste valor_ASM valor_energia classe_pertencente.
+Imagem 2 - Valores númericamente identificados para características estruturais (média do esqueleto e área do contorno), características restatísticas (média, desvio padrão, curtose e entropia) e características de texturas, para valores das matrizes de co-ocorrência para dissimilaridade, homogeneidade, contraste, ASM e energia, salvos para 100 imagens diferentes da mesma letra, para cada letra do alfabeto, totalizando 2400 imagens análisadas.
+
+Ordem de leitura separada por espaços: Dissimilaridade, Homogeneidade, Contraste, ASM, Energia, Média, Desvio padrão, Curtose, Entropia, Classe.
 <p align="center">
-    <img src="https://github.com/thiagodalsanto/feature_extraction/assets/55465433/c79c80b7-7930-4c0a-a3ad-2e074746a0d9">
+    <img src="https://i.imgur.com/z73jlac.png">
 </p>
 
 Imagem 3 - Aplicação de filtros do fast_GLCM gerados para cada letra do alfabeto. Ao todo foram gerados para 10 formatos diferentes para cada letra do alfabeto. Foram gerados para dissimilaridade, homogeneidade, contraste, energia e ASM.
