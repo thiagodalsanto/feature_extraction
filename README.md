@@ -24,11 +24,11 @@ Para os filtros do GLCM, foi utilizado o código de fast_glcm criado por [Taka T
 **Dependêndicas utilizadas:** Python 3, NumPy, OpenCV (cv2), Matplotlib e SkImage.
 
 ### Para o Linux:  
-`pip install python3 numpy opencv-python matplotlib skimage` 
+`pip install python3 numpy opencv-python matplotlib scikit-image` 
 
 ### Para o Windows:
 1. Python 3.11.5 ([Instalador 64-bit](https://www.python.org/downloads/windows/))
-2. `pip install numpy opencv-python matplotlib skimage` 
+2. `pip install numpy opencv-python matplotlib scikit-image` 
 
 ## Como Utilizar
 1. Clone o repositório do GitHub: `git clone https://github.com/thiagodalsanto/feature_extraction.git`
