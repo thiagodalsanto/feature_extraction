@@ -8,6 +8,8 @@ Na segunda etapa do projeto (extração de textura), a ênfase foi na extração
 
 Para os filtros do GLCM, foi utilizado o código de fast_glcm criado por [Taka Tzm](https://github.com/tzm030329/GLCM/), enquanto para a geração dos valores das matrizes de co-ocorrência para cada um dos valores escolhidos, foi utilizado o scikit-image.
 
+Ao fim, foi possível obter as imagens dos esqueletos e contornos das imagens, bem como a aplicação dos filtros GLCM nelas. Além do objetivo príncipal, a obteção dos valores numéricos para a média do esqueleto, área do contorno, média, desvio padrão, curtose e entropia. Além dos valores do GLCM para as matrizes de co-ocorrência de dissimilaridade, homogeneidade, contraste, ASM e energia.
+
 ## Sobre o trabalho:
 
 * Disciplina: OP63I-CC8 - Processamento De Imagens E Reconhecimento De Padrões	
