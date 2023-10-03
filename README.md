@@ -6,7 +6,7 @@ Na primeira etapa (extração de características), foram implementadas técnica
 
 Na segunda etapa do projeto (análise de textura), a ênfase foi na extração de informações texturais das letras. Foram analisadas 10 imagens diferentes para cada letra do alfabeto, e foram geradas cinco matrizes de co-ocorrência de níveis de cinza (GLCMs) para cada imagem. As GLCMs representam a relação entre os valores de intensidade dos pixels em uma imagem, capturando texturas e padrões. Às cinco características extraídas de cada GLCM foram: dissimilaridade, homogeneidade, contraste, energia e ASM.
 
-Para o GLCM, foi utilizado o código de fast_glcm criado por [Taka Tzm](https://github.com/tzm030329/GLCM/).
+Para os filtros do GLCM, foi utilizado o código de fast_glcm criado por [Taka Tzm](https://github.com/tzm030329/GLCM/), enquanto para a geração dos valores das matrizes de co-ocorrência para cada um dos valores escolhidos, foi utilizado o scikit-image.
 
 ## Sobre o trabalho:
 
@@ -17,7 +17,8 @@ Para o GLCM, foi utilizado o código de fast_glcm criado por [Taka Tzm](https://
 ## Recursos 
 - **Extração de Características Estruturais:** Foram extraidos duas características estruturais: esqueleto e contorno.
 - **Extração de Características Estatítiscas:** Foram extraidos quatro características estatísticas: média, desvio-padrão, curtose e entropia.
-- **Análise de Texturas:** Foi convertido utilizando o GLCM, cinco matrizes de coocorrência de níveis de cinza: homogeneidade, contraste, energia e ASM.
+- **Aplicação de Filtros GLCM:** Imagens convertidas com filtros GLCM, a partir do fast_GLCM com cinco matrizes de co-ocorrência de níveis de cinza: dissimilaridade, homogeneidade, contraste, energia e ASM.
+- **Obtenção dos valores de GLCM com SkImage:** Valores das matrizes de co-ocorrência obtidos através do SkImage para as matrizes de: dissimilaridade, homogeneidade, contraste, energia e ASM
 
 ## Dependências
 **Dependêndicas utilizadas:** Python 3, NumPy, OpenCV (cv2), Matplotlib e SkImage.
@@ -44,8 +45,13 @@ Imagem 1 - Na esquerda o esqueleto gerado para a letra, a direita o contorno del
     <img src="RESULTADO_ESTRUTURAIS_ESTATISTICAS/Y00001_skeleton_contours.png">
 </p>
 
-Imagem 2 - Métricas do GLCM gerados para cada letra do alfabeto. Ao todo foram gerados para 10 formatos diferentes para cada letra do alfabeto. Foram gerados para dissimilaridade, homogeneidade, contraste, energia e ASM.
+Imagem 2 - Aplicação de filtros do fast_GLCM gerados para cada letra do alfabeto. Ao todo foram gerados para 10 formatos diferentes para cada letra do alfabeto. Foram gerados para dissimilaridade, homogeneidade, contraste, energia e ASM.
 <p align="center">
     <img src="RESULTADO_GLCM/Z00002_metricas_glcm.png">
+</p>
+
+Imagem 3 - Valores das matrizes de co-ocorrência obtidos com o Scikit-Image para 10 imagens diferentes de cada letra do alfabeto. Foram obtidos valores para as matrizes de dissimilaridade, homogeneidade, contraste, energia e ASM. Exemplo de como saiu o resultado de um dos arquivos textuais para uma das letras geradas. O título do arquivo sai com a identificação da letra (Ex.: Z00008_glcm_values.txt).
+<p align="left">
+    <img src="https://github.com/thiagodalsanto/feature_extraction/assets/55465433/192c36e5-31d3-4e9d-94fd-95ecb33feec8">
 </p>
 
